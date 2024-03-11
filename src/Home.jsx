@@ -21,7 +21,7 @@ const Home = () => {
   const isInView2 = useInView(ref2, { once: false });
   const controls = useAnimation();
   const controls2 = useAnimation();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   // const animationVariants = {
   //   initial: { opacity: 0, y: 50 },
@@ -77,12 +77,11 @@ const Home = () => {
 
   return (
     <div>
-
       <video width="1320" height="1100" autoPlay muted loop className="bgVideo">
         <source src={bgVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      
+
       <div className="content" ref={contentContainerRef}>
         <h1 className="welcome">Welcome To The Digital Crypto Art</h1>
         <p className="text_content">
@@ -93,7 +92,9 @@ const Home = () => {
           <br />
           <br />
         </p>
-        <button id="myBtn" onClick={()=>navigate("/mentalHealth")} >EXPLORE NOW</button>
+        <button id="myBtn" onClick={() => navigate("/mentalHealth")}>
+          EXPLORE NOW
+        </button>
       </div>
       <div className="color">
         <div className="videoContainer">
@@ -142,32 +143,32 @@ const Home = () => {
             </div>
           </div>
           <motion.div
-          ref={ref2}
-          variants={{
-            hidden: { opacity: 0, x: 200 },
-            visible: { opacity: 1, x: 0 },
-          }}
-          initial="hidden"
-          animate={controls2}
-          transition={{ duration: 1 }}
-          > 
-          <div  className="contentContainer" ref={contentContainerRef}>
-            <h1 className="titleRotate">WORLD</h1>
-            <p className="linePara" >
-              The XR Portal To The Open Metaverse Enabling You To Play, Learn,
-              Socialize, Work And Travel To Different Worlds, Making VIVERSE
-              Even More Immersive From The Second You Put On Your Headset.
-            </p>
-            <button className="lineBtn">Explore Now</button>
-          </div>
+            ref={ref2}
+            variants={{
+              hidden: { opacity: 0, x: 200 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            initial="hidden"
+            animate={controls2}
+            transition={{ duration: 1 }}
+          >
+            <div className="contentContainer" ref={contentContainerRef}>
+              <h1 className="titleRotate">WORLD</h1>
+              <p className="linePara">
+                The XR Portal To The Open Metaverse Enabling You To Play, Learn,
+                Socialize, Work And Travel To Different Worlds, Making VIVERSE
+                Even More Immersive From The Second You Put On Your Headset.
+              </p>
+              <button className="lineBtn">Explore Now</button>
+            </div>
           </motion.div>
         </div>
       </div>
       <div className="lineContainer" id="lineContainer">
-        <div className="lineAppear "  ref={lineAppearRef}></div>
+        <div className="lineAppear " ref={lineAppearRef}></div>
         <div className="lineAppearBottom" ref={lineAppearBottomRef}></div>
         <div className="first a">
-          <div className="lineAppearMiddle"  ref={lineAppearMiddleRefs[0]}></div>
+          <div className="lineAppearMiddle" ref={lineAppearMiddleRefs[0]}></div>
           {/* <h1 className="line">WORLD</h1>
           <p className="linePara">
             Explore the diverse worlds within VIVERSE, including exciting
@@ -175,11 +176,21 @@ const Home = () => {
           </p>
           <button className="lineBtn">Explore Now</button> */}
           <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">Mohammed Asim Ahmed</div>
-            <div className="flip-card-back">Mohammed Asim Ahmed</div>
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                neque similique ea commodi natus excepturi sapiente repellat,
+                sint, hic numquam voluptate tenetur aspernatur voluptates! Vero
+                odit quis ut vel amet?
+              </div>
+              <div className="flip-card-back">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                neque similique ea commodi natus excepturi sapiente repellat,
+                sint, hic numquam voluptate tenetur aspernatur voluptates! Vero
+                odit quis ut vel amet?
+              </div>
+            </div>
           </div>
-        </div>
         </div>
         <div className="second a">
           <div className="lineAppearMiddle" ref={lineAppearMiddleRefs[1]}></div>
@@ -190,12 +201,22 @@ const Home = () => {
           </p>
           <button className="lineBtn" >Explore Now</button> */}
           <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">Mohammed Asim Ahmed</div>
-            <div className="flip-card-back">Mohammed Asim Ahmed</div>
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                neque similique ea commodi natus excepturi sapiente repellat,
+                sint, hic numquam voluptate tenetur aspernatur voluptates! Vero
+                odit quis ut vel amet?
+              </div>
+              <div className="flip-card-back">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                neque similique ea commodi natus excepturi sapiente repellat,
+                sint, hic numquam voluptate tenetur aspernatur voluptates! Vero
+                odit quis ut vel amet?
+              </div>
+            </div>
           </div>
-        </div>
-          <div className="lineAppearMiddle"  ref={lineAppearMiddleRefs[2]}></div>
+          <div className="lineAppearMiddle" ref={lineAppearMiddleRefs[2]}></div>
         </div>
         <div className="third a">
           {/* <h1 className="line">WORLD</h1>
@@ -205,11 +226,21 @@ const Home = () => {
           </p>
           <button className="lineBtn">Explore Now</button> */}
           <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">Mohammed Asim Ahmed</div>
-            <div className="flip-card-back">Mohammed Asim Ahmed</div>
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                neque similique ea commodi natus excepturi sapiente repellat,
+                sint, hic numquam voluptate tenetur aspernatur voluptates! Vero
+                odit quis ut vel amet?
+              </div>
+              <div className="flip-card-back">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                neque similique ea commodi natus excepturi sapiente repellat,
+                sint, hic numquam voluptate tenetur aspernatur voluptates! Vero
+                odit quis ut vel amet?
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </div>
       {/* <div className="container">
