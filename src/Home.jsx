@@ -121,6 +121,7 @@ const Home = ({ setProtect }) => {
               >
                 Hidden Anywhere
               </h2>{" "} */}
+              <div style={{ color: "black"}}>Lol,found a fresher!!!</div>
               <h2 className="trade" style={{ zIndex: "10" }}>
                 Hidden Anywhere
               </h2>
