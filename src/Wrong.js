@@ -3,7 +3,7 @@ import React from "react";
 const Wrong = () => {
   return (
     <div>
-      <button onClick={() => alert(`Answer is "Digital Evolution"`)}>
+      <button onClick={() => alert("$Prashant Sir OP$")}>
         click
         {/* sjvn */}
       </button>

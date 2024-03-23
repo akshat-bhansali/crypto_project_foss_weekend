@@ -3,7 +3,7 @@ import "./App.css";
 import bgVideo from "./assets/checkimg.mp4";
 import avtar2 from "./assets/avtar2.mp4";
 import metaverse from "./assets/metaverse.mp4";
-import crypto from "./assets/ZWxvcXVlbnQgY29kZWNyYWZ0.jpg";
+import crypto from "./assets/decode_base64_ZWxvcXVlbnQgY29kZWNyYWZ0.jpg";
 import check_image from "./assets/check_image.jpg";
 import { useAnimation, motion, useInView } from "framer-motion";
 import { useNavigate } from "react-router";
@@ -114,14 +114,13 @@ const Home = ({ setProtect }) => {
                 marginBottom: "70px",
               }}
             >
-              {/* <h2
+              <h2
                 style={{ color: "red", position: "absolute" }}
-                id="answer is out of visibiltity"
+                id="$Genesis$"
                 className="trade"
               >
                 Hidden Anywhere
-              </h2>{" "} */}
-              <div style={{ color: "black"}}>Lol,found a fresher!!!</div>
+              </h2>{" "}
               <h2 className="trade" style={{ zIndex: "10" }}>
                 Hidden Anywhere
               </h2>
@@ -219,7 +218,7 @@ const Home = ({ setProtect }) => {
               style={{ color: "white", position: "absolute" }}
               placeholder="Enter Appropriate Input"
             >
-              text
+              $Cristiano Ronaldo$
             </div>
           </div>
         </div>
